@@ -1,0 +1,18 @@
+name: Json Rest Server
+port: 8080
+host: 0.0.0.0
+database: database.json
+
+auth:
+   jwtSecret: cwsMXDtuP447WZQ63nM4dWZ3RppyMl
+   jwtExpire: 5
+   unauthorizedStatusCode: 401
+   urlSkip:
+      - /images/:
+         method: get
+      - /users:
+         method: post
+      - /products:
+         method: get
+      - /products/{*}:
+          method: get
