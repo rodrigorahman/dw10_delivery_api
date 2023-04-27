@@ -5,7 +5,7 @@ database: database.json
 
 auth:
    jwtSecret: cwsMXDtuP447WZQ63nM4dWZ3RppyMl
-   jwtExpire: 5
+   jwtExpire: 3600
    unauthorizedStatusCode: 401
    urlSkip:
       - /images/:
